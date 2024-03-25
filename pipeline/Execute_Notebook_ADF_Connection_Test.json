@@ -1,0 +1,31 @@
+{
+	"name": "Execute_Notebook_ADF_Connection_Test",
+	"properties": {
+		"description": "This pipeline has a notebook activity that tests the connection between Azure Data Factory and Azure Databricks",
+		"activities": [
+			{
+				"name": "ADF_Connection_Test",
+				"type": "DatabricksNotebook",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Users/nimmasa@mfcgd.com/NS_Notebooks/ADF Connection Test"
+				},
+				"linkedServiceName": {
+					"referenceName": "NS_Azure_Databricks_POC2",
+					"type": "LinkedServiceReference"
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2024-02-26T22:28:58Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

@@ -1,0 +1,9 @@
+{
+	"name": "ADFPOC2",
+	"location": "canadacentral",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "86a6ada6-eb4c-44c1-8524-b9434e50a7fb",
+		"tenantId": "5d3e2773-e07f-4432-a630-1a0f68a28a05"
+	}
+}

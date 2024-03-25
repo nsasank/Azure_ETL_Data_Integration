@@ -1,0 +1,17 @@
+{
+	"name": "AZWDBNSQLJHUBD1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": "integrated security=True;data source=AZWDBNSQLJHUBD1;initial catalog=jhidatahub;trustservercertificate=true",
+			"userName": "bhandch@mfcgd.com",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiIwMWEzY2JlNC1jZjY4LTQ1YTAtYmNmYi05MmQ1ZDA1Mzg0NDIiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "integrationRuntime1",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

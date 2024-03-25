@@ -1,0 +1,25 @@
+{
+	"name": "File_Dependancy_Trigger",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "Execute_Notebook_Transaction_Files_Load_Process",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/jhilanding/blobs/SalesConnect/SC_TRANS_EVENT_",
+			"blobPathEndsWith": ".TXT",
+			"ignoreEmptyBlobs": false,
+			"scope": "/subscriptions/b1917dcc-e8cf-4419-85af-d410e58ec3d8/resourceGroups/CAC-SDH_POC-Sandbox-network/providers/Microsoft.Storage/storageAccounts/salesdatahubgen2",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}

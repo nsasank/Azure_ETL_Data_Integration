@@ -1,0 +1,37 @@
+{
+	"name": "pipeline1",
+	"properties": {
+		"activities": [
+			{
+				"name": "Notebook2",
+				"type": "DatabricksNotebook",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Users/bhandch@mfcgd.com/Read from Salesforce And Insert into Datahub",
+					"libraries": [
+						{
+							"maven": {
+								"coordinates": "com.microsoft.azure:spark-mssql-connector_2.12:1.3.0-BETA"
+							}
+						}
+					]
+				},
+				"linkedServiceName": {
+					"referenceName": "NS_Azure_Databricks_POC2",
+					"type": "LinkedServiceReference"
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2024-02-27T00:07:59Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
